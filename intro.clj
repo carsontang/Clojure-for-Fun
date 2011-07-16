@@ -25,7 +25,7 @@
 	
 ; Loop, tail recursion w/o the use of a helper function, NEAT!
 (defn sum-down-from [initial-x]
-	(loop [sum 0, x initial-x]
+   (loop [sum 0, x initial-x]
 		(if (pos? x)
 			(recur (+ sum x) (dec x))
 			sum)))
